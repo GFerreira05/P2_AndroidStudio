@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#191919"
+    tools:context=".Solicitacao">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tipo de Solicitação Acadêmica"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="16dp"/>
+
+    <RadioGroup
+        android:id="@+id/grupo_solicitacoes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="12dp">
+
+        <RadioButton
+            android:id="@+id/rb_declaracao_matricula"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Declaração de Matrícula"
+            android:textColor="#FFFFFF"
+            android:buttonTint="#FFFFFF"
+            android:layout_marginBottom="8dp"/>
+
+        <RadioButton
+            android:id="@+id/rb_historico_escolar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Histórico Escolar"
+            android:textColor="#FFFFFF"
+            android:buttonTint="#FFFFFF"
+            android:layout_marginBottom="8dp"/>
+
+        <RadioButton
+            android:id="@+id/rb_atestado_frequencia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Atestado de Frequência"
+            android:textColor="#FFFFFF"
+            android:buttonTint="#FFFFFF"
+            android:layout_marginBottom="8dp"/>
+
+        <RadioButton
+            android:id="@+id/rb_conteudo_programatico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Conteúdo Programático"
+            android:textColor="#FFFFFF"
+            android:buttonTint="#FFFFFF"
+            android:layout_marginBottom="8dp"/>
+
+        <RadioButton
+            android:id="@+id/rb_revisao_nota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Solicitação de Revisão de Nota"
+            android:textColor="#FFFFFF"
+            android:buttonTint="#FFFFFF"
+            android:layout_marginBottom="8dp"/>
+
+        <RadioButton
+            android:id="@+id/rb_segunda_via_boleto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2ª Via de Boleto"
+            android:textColor="#FFFFFF"
+            android:buttonTint="#FFFFFF"
+            android:layout_marginBottom="16dp"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_enviar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enviar Solicitação"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#4CAF50"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="12dp"/>
+
+    <include layout="@layout/rodape"/>
+
+</LinearLayout>
